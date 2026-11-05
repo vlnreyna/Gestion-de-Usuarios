@@ -36,18 +36,6 @@ Aplicación web de gestión de usuarios con arquitectura cliente-servidor: una A
 - Node.js 20.19+ o 22.12+ (requerido por Vite 8)
 - MySQL en ejecución con una base de datos creada
 
-## Configuración del backend
-
-El backend lee la conexión a la base de datos desde un fichero `.env` ubicado en `backend/` (ya incluido en `.gitignore`, **no lo subas al repositorio**):
-
-```properties
-DB_URL=jdbc:mysql://localhost:3306/gestion_usuarios
-DB_USERNAME=tu_usuario
-DB_PASSWORD=tu_contraseña
-```
-
-Con `spring.jpa.hibernate.ddl-auto=update`, Hibernate crea/actualiza la tabla `usuarios` automáticamente al arrancar.
-
 ## Puesta en marcha
 
 ### Backend
